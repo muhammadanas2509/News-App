@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">NewsApp</div>
+        <div class="search-bar">
+            <input type="text"  id="input" placeholder="Search News..." />
+            <button onclick="search()">Search</button>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="./istockphoto-1183338498-612x612.jpg" alt="Image 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="./istockphoto-1183338498-612x612.jpg" alt="Image 2">
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="./istockphoto-1183338498-612x612.jpg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- News Cards Section -->
+    <div class="news-container" id="news-container">
+        
+       
+    </div>
+
+    <div id="loader" style="position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 10; height: 100vh; width: 100vw; display: flex; align-items: center; justify-content: center;">
+        <div class="loader" >
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 NewsApp. Muhammad Anas All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
