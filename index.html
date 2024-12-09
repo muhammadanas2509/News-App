@@ -3,53 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive News App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Responsive News Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">NewsApp</div>
-        <div class="search-bar">
-            <input type="text"  id="input" placeholder="Search News..." />
-            <button onclick="search()">Search</button>
-        </div>
-    </nav>
 
-    <!-- Slider -->
-    <div class="slider">
-        <div class="slides">
-            <!-- Slide 1 -->
-            <div class="slide">
-                <img src="./istockphoto-1183338498-612x612.jpg" alt="Image 1">
-            </div>
-            <!-- Slide 2 -->
-            <div class="slide">
-                <img src="./istockphoto-1183338498-612x612.jpg" alt="Image 2">
-            </div>
-            <!-- Slide 3 -->
-            <div class="slide">
-                <img src="./istockphoto-1183338498-612x612.jpg" alt="Image 3">
+    <!-- Banner Section -->
+    <section id="banner">
+        <div class="banner-content">
+            <h1>Welcome to News Website</h1>
+            <p>Find what you're looking for quickly and easily!</p>
+            
+            <div class="search-bar">
+                <input 
+                    type="text" 
+                    id="search" 
+                    placeholder="Search..."
+                    aria-label="Search"
+                >
+                <span class="clear-icon" id="clear-icon" title="Clear input" onclick="clearInput()">
+                    <i class="fas fa-times"></i>
+                </span>
+                <button id="searchButton" onclick="search()">Search</button>
             </div>
         </div>
-    </div>
+    </section>
+    <span class="loader" id="loader"></span>
+    <div class="hed" id="hed"></div>
 
-    <!-- News Cards Section -->
-    <div class="news-container" id="news-container">
-        
-       
-    </div>
+    <!-- Cards Section -->
+    <section id="cards">
+        <!-- Dynamic content will load here -->
+    </section>
 
-    <div id="loader" style="position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 10; height: 100vh; width: 100vw; display: flex; align-items: center; justify-content: center;">
-        <div class="loader" >
-
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 NewsApp. Muhammad Anas All rights reserved.</p>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
     </footer>
-    <script src="app.js"></script>
+     <script src="app.js"></script>
+
 </body>
 </html>
